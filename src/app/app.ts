@@ -7,5 +7,16 @@ import { Component, signal } from '@angular/core';
   templateUrl: './app.html',
 })
 export class App {
-  protected readonly title = signal('introAngular');
+  
+  title:string='Araceli del Rocio Gonzalez Luna'
+
+  duplicarnumero(a:number):number{
+    return a*2
+  }
+
+  pelicula={
+    titulo: 'Spider Man',
+    fechaLanzamiento: new Date(),
+    precio: 2353
+  }
 }

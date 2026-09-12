@@ -2,21 +2,20 @@ import { Component, signal } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  standalone: false,
-  styleUrl: './app.css',
   templateUrl: './app.html',
+  standalone: false,
+  styleUrl: './app.css'
 })
 export class App {
-  
-  title:string='Araceli del Rocio Gonzalez Luna'
+  title:string = 'Araceli del Rocio Gonzalez Luna'
 
   duplicarnumero(a:number):number{
     return a*2
   }
 
   pelicula={
-    titulo: 'Spider Man',
+    titulo: 'Spider-Man',
     fechaLanzamiento: new Date(),
-    precio: 2353
+    precio: 250
   }
 }

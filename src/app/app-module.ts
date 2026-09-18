@@ -9,10 +9,11 @@ import { HeroesList } from './heroes/heroes-list/heroes-list';
 import { HeroesFilterPipe } from './heroes/heroes-filter-pipe';
 import { OperaBas } from './formulario/opera-bas/opera-bas';
 import { OperaDist } from './formulario/opera-dist/opera-dist';
+import { Figuras } from './formulario/figuras/figuras';
 
 @NgModule({
   declarations: [App, HeroesList, HeroesFilterPipe, OperaDist],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, OperaBas],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, OperaBas, Figuras],
   providers: [provideBrowserGlobalErrorListeners()],
   bootstrap: [App],
 })

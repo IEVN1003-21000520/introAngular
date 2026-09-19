@@ -3,12 +3,13 @@ import { IHeroe } from './heroe';
 
 @Pipe({
   name: 'heroesFilter',
-  standalone: false,
+  standalone: true,
 })
 export class HeroesFilterPipe implements PipeTransform {
-  transform(value:IHeroe[], args:string):IHeroe[] {
-    let filter:string = args?args.toLocaleLowerCase():'';
-    return filter?value.filter((hero:IHeroe)=> 
-      hero.nombre.toLocaleLowerCase().indexOf(filter)!==-1):value;
+  transform(value: IHeroe[], args: string): IHeroe[] {
+    let filter: string = args ? args.toLocaleLowerCase() : '';
+    return filter 
+      ? value.filter((hero: IHeroe) => hero.nombre.toLocaleLowerCase().indexOf(filter) !== -1)
+      : value;
   }
 }

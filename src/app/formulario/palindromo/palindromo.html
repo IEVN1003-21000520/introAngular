@@ -1,0 +1,41 @@
+<div class="col-6"> 
+    <div class="mb-3"> 
+        <h1 class="h3 mb-3">Valoración de Palíndromos</h1>
+
+        <form> 
+            <div class="mb-3"> 
+                <label for="oracion" class="form-label">Escribe una oracion:</label> 
+                <input [(ngModel)]="oracion" 
+                       type="text" 
+                       name="oracion" 
+                       class="form-control" 
+                       id="oracion" 
+                       placeholder="Ingresa tu oración aquí"> 
+            </div> 
+
+            <button (click)="ejecutar()" 
+                    type="button" 
+                    class="btn btn-primary my-3">
+                Ejecutar
+            </button>
+
+            <table class="table table-bordered text-center">
+                <thead class="table-light">
+                    <tr>
+                        <th>Vocales</th>
+                        <th>Consonantes</th>
+                        <th>¿Es un Palíndromo?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{ totalVocales }}</td>
+                        <td>{{ totalConsonantes }}</td>
+                        <td>{{ esPalindromo ? 'Sí' : 'No' }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </form> 
+    </div> 
+</div>
+

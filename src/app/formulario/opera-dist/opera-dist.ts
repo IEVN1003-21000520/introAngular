@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-opera-dist',
-  standalone: false,
+  standalone: true,
+  imports: [FormsModule],
   styleUrl: './opera-dist.css',
   templateUrl: './opera-dist.html',
 })
